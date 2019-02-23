@@ -1,0 +1,149 @@
+import React, { Component } from 'react';
+
+
+class Footer extends Component {
+  render() {
+    return (
+      <div className="Footer">
+        {/* <!-- footer --> */}
+        <footer className="footer-content">
+                    <div className="layer footer">
+                        <div className="container-fluid">
+                            <div className="row footer-top-inner-w3ls">
+                                <div className="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                                    <h2>
+                                        <a className="navbar-brand" href="index.html"><span className="fa fa-gg" aria-hidden="true"></span>
+                                          Style &  Dcor
+                        </a>
+                                    </h2>
+                                    <p className="my-3">Donec consequat sam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
+                                    <p>
+                                        Id quod possimusapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci.
+                        </p>
+                                </div>
+                                <div className="col-lg-2 col-md-6 mt-md-0 mt-5">
+                                    <div className="footer-w3pvt">
+                                        <h3 className="mb-3 w3pvt_title">Navigation</h3>
+                                        <hr />
+                                        <ul className="list-info-w3pvt">
+                                            <li>
+                                                <a href="#home" className="scroll">
+                                                    Home
+                                </a>
+                                            </li>
+                                            <li className="my-2">
+                                                <a href="#about" className="scroll">
+                                                    About Us
+                                </a>
+                                            </li>
+                                            <li className="my-2">
+                                                <a href="#gallery" className="scroll">
+                                                    Gallery
+                                </a>
+                                            </li>
+                                            <li className="mb-2">
+                                                <a href="#services" className="scroll">
+                                                    Services
+                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact" className="scroll">
+                                                    Contact Us
+                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                                    <div className="footer-w3pvt">
+                                        <h3 className="mb-3 w3pvt_title">Links</h3>
+                                        <hr />
+                                        <ul className="list-info-w3pvt">
+                                            <li>
+                                                <a href="#about" className="scroll">
+                                                    Our Mission
+                                </a>
+                                            </li>
+                                            <li className="my-2">
+                                                <a href="#blog" className="scroll">
+                                                    Latest Posts
+                                </a>
+                                            </li>
+                                            <li className="my-2">
+                                                <a href="#">
+                                                    Explore
+                                </a>
+                                            </li>
+                                            <li className="mb-2">
+                                                <a href="#contact" className="scroll">
+                                                    Find us
+                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html">
+                                                    Privacy Policy
+                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                                    <div className="footer-w3pvt">
+                                        <h3 className="mb-3 w3pvt_title">Contact Us</h3>
+                                        <hr />
+                                        <div className="last-w3ls-contact">
+                                            <p>
+                                                <a href="mailto:example@email.com">info@example.com</a>
+                                            </p>
+                                        </div>
+                                        <div className="last-w3ls-contact my-2">
+                                            <p>+ 456 123 7890</p>
+                                        </div>
+                                        <div className="last-w3ls-contact">
+                                            <p>+ 90 nsequursu dsdesdc,
+                                    <br />xxx Honey State 049436.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2019 Dcor. All Rights Reserved | Design by
+                    <a href="http://w3layouts.com/"> W3layouts </a>
+                            </p>
+                            <div className="w3ls-footer text-center mt-4">
+                                <ul className="list-unstyled w3ls-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span className="fa fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span className="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span className="fa fa-dribbble"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span className="fa fa-vk"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="move-top text-right"><a href="#home" className="move-top"> <span className="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+                        </div>
+                        {/* <!-- //footer bottom --> */}
+                    </div>
+                </footer>
+                {/* <!-- //footer --> */}
+      </div>
+    );
+  }
+}
+
+export default Footer;
