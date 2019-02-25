@@ -7,6 +7,9 @@ class MidSection extends Component {
         {/* <!--/mid-sec--> */}
         <section className="mid-sec py-5" id="mid">
                     <div className="container py-lg-5">
+                                <div className="header pb-lg-3 pb-3 text-center">
+                            <h3 className="tittle mb-lg-3 mb-3"> Services We Provide<span>.</span></h3>
+                        </div>
                         <div className="row">
                             <div className="col-md-6 mid-right-content text-left mt-4">
                                 <div className="row">
@@ -14,7 +17,7 @@ class MidSection extends Component {
                                         <img src={require("../asssets/images/5.jpg")} alt="news image" className="img-fluid" />
                                     </div>
                                     <div className="col-md-8 mid-right-info">
-                                        <h5 className="mb-4">AGENCY INTERIOR</h5>
+                                        <h5 className="mb-4">Commercial Interior</h5>
                                         <p>Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.</p>
                                     </div>
                                 </div>
@@ -32,7 +35,7 @@ class MidSection extends Component {
                                         <img src={require("../asssets/images/7.jpg")} alt="news image" className="img-fluid" />
                                     </div>
                                     <div className="col-md-8 mid-right-info">
-                                        <h5 className="mb-4">COFFESHOP INTERIOR</h5>
+                                        <h5 className="mb-4">Workplace INTERIOR</h5>
                                         <p>Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.</p>
                                     </div>
                                 </div>

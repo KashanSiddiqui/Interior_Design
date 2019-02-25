@@ -10,7 +10,7 @@ class Gallery extends Component {
         <section className="gallery py-5" id="gallery">
                     <div className="container py-md-5">
                         <div className="header text-center">
-                            <h3 className="tittle mb-lg-5 mb-3">Our Gallery<span>.</span></h3>
+                            <h3 className="tittle mb-lg-5 mb-3">How we Do<span>.</span></h3>
                         </div>
                         <div className="row news-grids text-center">
                         <Roll left>

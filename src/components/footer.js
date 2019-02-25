@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Footer extends Component {
@@ -27,14 +28,14 @@ class Footer extends Component {
                                         <hr />
                                         <ul className="list-info-w3pvt">
                                             <li>
-                                                <a href="#home" className="scroll">
+                                                <Link to="/" className="scroll">
                                                     Home
-                                </a>
+                                </Link>
                                             </li>
                                             <li className="my-2">
-                                                <a href="#about" className="scroll">
+                                                <Link to="/about" className="scroll">
                                                     About Us
-                                </a>
+                                </Link>
                                             </li>
                                             <li className="my-2">
                                                 <a href="#gallery" className="scroll">
@@ -47,46 +48,46 @@ class Footer extends Component {
                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#contact" className="scroll">
+                                                <Link to="/contact" className="scroll">
                                                     Contact Us
-                                </a>
+                                </Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
-                                    <div className="footer-w3pvt">
-                                        <h3 className="mb-3 w3pvt_title">Links</h3>
-                                        <hr />
-                                        <ul className="list-info-w3pvt">
-                                            <li>
-                                                <a href="#about" className="scroll">
-                                                    Our Mission
-                                </a>
-                                            </li>
-                                            <li className="my-2">
-                                                <a href="#blog" className="scroll">
-                                                    Latest Posts
-                                </a>
-                                            </li>
-                                            <li className="my-2">
-                                                <a href="#">
-                                                    Explore
-                                </a>
-                                            </li>
-                                            <li className="mb-2">
-                                                <a href="#contact" className="scroll">
-                                                    Find us
-                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="index.html">
-                                                    Privacy Policy
-                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                    {/* <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                                        <div className="footer-w3pvt">
+                                            <h3 className="mb-3 w3pvt_title">Links</h3>
+                                            <hr />
+                                            <ul className="list-info-w3pvt">
+                                                <li>
+                                                    <a href="#about" className="scroll">
+                                                        Our Mission
+                                    </a>
+                                                </li>
+                                                <li className="my-2">
+                                                    <a href="#blog" className="scroll">
+                                                        Latest Posts
+                                    </a>
+                                                </li>
+                                                <li className="my-2">
+                                                    <a href="#">
+                                                        Explore
+                                    </a>
+                                                </li>
+                                                <li className="mb-2">
+                                                    <a href="#contact" className="scroll">
+                                                        Find us
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="index.html">
+                                                        Privacy Policy
+                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> */}
                                 <div className="col-lg-3 col-md-6 mt-lg-0 mt-5">
                                     <div className="footer-w3pvt">
                                         <h3 className="mb-3 w3pvt_title">Contact Us</h3>

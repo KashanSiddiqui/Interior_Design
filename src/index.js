@@ -10,6 +10,7 @@ import ClientReviews from './components/clientReviews';
 import Gallery from './components/gallery';
 import About from './components/about';
 import Routing from './config/route';
+import ContainedButtons from './components/shared/button' 
 
 ReactDOM.render(<Routing/>, document.getElementById('root'));
 
