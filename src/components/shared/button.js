@@ -16,9 +16,9 @@ const styles = theme => ({
 function ContainedButtons(props) {
   const { classes } = props;
   return (
-    <div>
+    <div >
       
-      <Button variant="contained"  className={classes.button} style={{marginTop:'10px',backgroundColor:'#96684F'}}>
+      <Button variant="contained"  className={classes.button} style={{marginTop:props.margin,backgroundColor:props.color ,width:props.width}} >
         {props.text}
       </Button>
       

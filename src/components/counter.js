@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import OutlinedTextFields from './shared/textfield'
+import ContainedButtons from './shared/button'
+
 
 class Counter extends Component {
   render() {
@@ -20,6 +22,9 @@ class Counter extends Component {
         </div>
         <div >
         <OutlinedTextFields text='brief description' className="bharwa"/>
+        </div>
+        <div style={{marginTop:'25px',textAlign:'center'}}>
+          <ContainedButtons text='Submit' color='#96684F' margin='10px' width='150px'/>
         </div>
          </div>          
                 </section>
