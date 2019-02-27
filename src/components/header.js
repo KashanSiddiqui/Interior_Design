@@ -42,7 +42,7 @@ class Header extends Component {
                                 {/* <!-- nav --> */}
                                 <nav className="py-4 d-lg-flex">
                                     <div id="logo">
-                                        <h1> <a href="index.html"><span className="fa fa-gg" aria-hidden="true"></span> Style & Dcor</a></h1>
+                                        <h1> <a href="index.html"><span className="fa fa-gg" aria-hidden="true"></span> Style & Dcor</a></h1>
                                     </div>
                                     <label for="drop" className="toggle">Menu</label>
                                     <input type="checkbox" id="drop" />
@@ -50,8 +50,8 @@ class Header extends Component {
                                         <li className="active"> <Link to="/">Home</Link></li> 
                                         <li><Link to="/about" className="scroll">About</Link></li>
                                         <li><a href="#blog" className="scroll">Blogs</a></li>
-                                        <li>
                                             {/* <!-- First Tier Drop Down --> */}
+                                        {/* <li>
                                             <label for="drop-2" className="toggle">Dropdown <span className="fa fa-angle-down" aria-hidden="true"></span> </label>
                                             <a href="#">Dropdown <span className="fa fa-angle-down" aria-hidden="true"></span></a>
                                             <input type="checkbox" id="drop-2" />
@@ -60,7 +60,7 @@ class Header extends Component {
                                                 <li><a href="#plans" className="scroll">Plans</a></li>
                                                 <li><a href="#blog" className="scroll">Events</a></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li><Link to='/contact' className="scroll">Contact</Link></li>
                                     </ul>
                                 </nav>

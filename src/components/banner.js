@@ -7,10 +7,10 @@ import ContainedButtons from './shared/button'
 class Banner extends Component {
   render() {
     return (
-      <div className="Banner">
+      <div className="Banner" >
         {/* <!-- /banner --> */}
         <div className="main-content" id="home">
-          <div className="layer">
+          <div className="layer" style={{height:'100vh'}}>
 
             <div className="container ">
               <div className="banner-info-w3layouts ">

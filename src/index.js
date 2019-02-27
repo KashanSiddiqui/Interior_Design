@@ -11,7 +11,7 @@ import Gallery from './components/gallery';
 import About from './components/about';
 import Routing from './config/route';
 import ContainedButtons from './components/shared/button' 
-
+import OutlinedTextFields from './components/shared/textfield'
 ReactDOM.render(<Routing/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

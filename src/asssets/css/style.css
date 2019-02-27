@@ -397,7 +397,7 @@ li > a:only-child:after {
 /*-- //header --*/
 
 .main-content {
-    background: url(../images/banner2.jpg) center no-repeat;
+    background: url(../images/img2.jpg) center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1556,6 +1556,17 @@ a.move-top span {
     .layer {
         min-height: 25em;
     }
+
+}
+
+.bharwa{
+    background-color: red !important
 }
 
 /*-- //Responsive design --*/
+/* .textareaDisplay{
+ display:'inline-flex'
+} */
+.MuiFormControl-root-37{
+    display: grid !important
+}
