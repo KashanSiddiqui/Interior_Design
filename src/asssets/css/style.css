@@ -232,11 +232,15 @@ li > a:only-child:after {
 @media all and (max-width:991px) {
 
     #logo {
-        display: block;
+        display: inline;
         padding: 0;
         width: 100%;
         text-align: center;
         float: none;
+    }
+
+    #logo-img{
+        width: 70%;
     }
 
     nav {

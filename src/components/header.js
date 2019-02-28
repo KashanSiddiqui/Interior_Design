@@ -42,7 +42,7 @@ class Header extends Component {
                                 {/* <!-- nav --> */}
                                 <nav className="py-4 d-lg-flex">
                                     <div id="logo">
-                                        <h1> <a href="index.html"><span className="fa fa-gg" aria-hidden="true"></span> Style & Dcor</a></h1>
+                                         <img src={require("../asssets/images/logo.png")} id='logo-img'/>
                                     </div>
                                     <label for="drop" className="toggle">Menu</label>
                                     <input type="checkbox" id="drop" />

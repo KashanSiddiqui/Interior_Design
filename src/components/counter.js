@@ -21,7 +21,7 @@ class Counter extends Component {
         <OutlinedTextFields text='Phone Number'/>
         </div>
         <div >
-        <OutlinedTextFields text='brief description' className="bharwa"/>
+        <OutlinedTextFields text='brief description' />
         </div>
         <div style={{marginTop:'25px',textAlign:'center'}}>
           <ContainedButtons text='Submit' color='#96684F' margin='10px' width='150px'/>
