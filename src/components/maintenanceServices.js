@@ -9,7 +9,7 @@ class MaintenanceServices extends Component {
         <section className="services py-5" id="services">
                     <div className="container py-md-5">
                         <div className="header pb-lg-3 pb-3 text-center">
-                            <h3 className="tittle mb-lg-3 mb-3"> Who We Are<span>.</span></h3>
+                            <h3 className="tittle mb-lg-3 mb-3"> Services We provide<span>.</span></h3>
                         </div>
                         <div className="row ab-info second mt-lg-4">
                         <Fade bottom>

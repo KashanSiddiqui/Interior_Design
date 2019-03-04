@@ -31,7 +31,7 @@ class Home extends Component {
                 <Gallery/>
                 <Counter/>
                 <Blog/>
-                <ClientReviews/>
+                {/* <ClientReviews/> */}
                 
                 <Footer />
             </div>

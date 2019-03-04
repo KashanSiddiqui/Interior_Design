@@ -44,7 +44,9 @@ class Header extends Component {
                                     <div id="logo">
                                          <img src={require("../asssets/images/logo.png")} id='logo-img'/>
                                     </div>
-                                    <label for="drop" className="toggle">Menu</label>
+                                    <label for="drop" className="toggle"><i class="fas fa-bars"></i></label>
+                                    
+                                         {/* <i class="material-icons" for="drop" className="toggle">add</i> */}
                                     <input type="checkbox" id="drop" />
                                     <ul className="menu mt-2 ml-auto">
                                         <li className="active"> <Link to="/">Home</Link></li> 

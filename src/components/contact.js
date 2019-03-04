@@ -4,12 +4,12 @@ import Footer from './footer';
 
 
 class Contact extends Component {
-  render() {
-    return (
-      <div className="Contact">
-      <Header/>
-        {/* <!-- contact --> */}
-        <section className="contact py-5" id="contact">
+    render() {
+        return (
+            <div className="Contact">
+                <Header />
+                {/* <!-- contact --> */}
+                <section className="contact py-5" id="contact">
                     <div className="container pb-5">
                         <div className="header py-lg-5 pb-3 text-center">
                             <h3 className="tittle mb-lg-5 mb-3"> Contact Us<span>.</span></h3>
@@ -56,6 +56,12 @@ class Contact extends Component {
                         </ul>
                         <div className="contact-form mx-auto text-left mt-lg-5 mt-4">
                             <form name="contactform" id="contactform1" method="post" action="#">
+                                <div style={{ textAlign: 'center', margin: '0 auto' }}>
+                                    <h1 style={{ marginBottom: '50px', color: '#F4BB7D' }}><b>Work With Style & Decor!</b></h1>
+                                    <p style={{ marginBottom: '50px' }}> If you are interested in working with us, please fill out the following introductory questionnaire. By filling this out, you tell us about you and your design needs. From there, our team will give you a call to quickly chat about how we can help and to set up your initial consultation.
+                                    </p>
+                                    <h6 style={{ marginBottom: '50px',color:'#F4BB7D' }}>WE ARE EXCITED TO WORK WITH YOU!</h6>
+                                </div>
                                 <div className="row">
                                     <div className="col-lg-4 con-gd">
                                         <div className="form-group" data-aos="fade-up">
@@ -94,10 +100,10 @@ class Contact extends Component {
 
                 </section>
                 {/* <!-- //contact --> */}
-                <Footer/>
-      </div>
-    );
-  }
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default Contact;
