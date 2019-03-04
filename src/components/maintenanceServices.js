@@ -50,7 +50,7 @@ class MaintenanceServices extends Component {
                                 <div className="ab-content-inner">
                                     <img src={require("../asssets/images/4.jpg")} alt="news image" className="img-fluid" />
                                     <div className="ab-info-con">
-                                        <h4>Architecture Design</h4>
+                                        <h4>Work space Design</h4>
                                         <p>Integer sit amet mattis quam, sit amet ultricies velit ullamcorper.</p>
                                     </div>
                                 </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Footer from './footer';
+import '../asssets/css/about.css'
 
 
 class Contact extends Component {
@@ -8,12 +9,19 @@ class Contact extends Component {
         return (
             <div className="Contact">
                 <Header />
+                <div className="about-content" id="home">
+                    <div className="about-layer" style={{ height: '40vh' }}>
+                    <div className=" about-head ">
+                                <h3 className="tittle" style={{ color: 'white' }}>Contact Us<span>.</span></h3>
+                            </div>
+                    </div>
+                </div>
                 {/* <!-- contact --> */}
                 <section className="contact py-5" id="contact">
                     <div className="container pb-5">
-                        <div className="header py-lg-5 pb-3 text-center">
+                        {/* <div className="header py-lg-5 pb-3 text-center">
                             <h3 className="tittle mb-lg-5 mb-3"> Contact Us<span>.</span></h3>
-                        </div>
+                        </div> */}
                         <ul className="list-unstyled row text-left mb-lg-5 mb-3">
                             <li className="col-lg-4 adress-info">
                                 <div className="row">

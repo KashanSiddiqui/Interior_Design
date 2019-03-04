@@ -8,7 +8,7 @@ class Blog extends Component {
         <section className="blog_w3ls py-5" id="blog">
                     <div className="container py-xl-5 py-lg-3">
                         <div className="header text-center">
-                            <h3 className="tittle mb-lg-5 mb-4">Blog Posts<span>.</span></h3>
+                            <h3 className="tittle mb-lg-5 mb-4">Other Services<span>.</span></h3>
                         </div>
                         <div className="row">
                             {/* <!-- blog grid --> */}
@@ -30,10 +30,10 @@ class Blog extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        <div className="price-button mt-md-3 mt-2">
+                                        {/* <div className="price-button mt-md-3 mt-2">
                                             <a className="btn text-uppercase" href="single.html">
                                                 Read More</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -52,10 +52,10 @@ class Blog extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        <div className="price-button mt-md-3 mt-2">
+                                        {/* <div className="price-button mt-md-3 mt-2">
                                             <a className="btn text-uppercase" href="single.html">
                                                 Read More</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="card-header p-0">
                                         <a href="single.html">
@@ -84,10 +84,10 @@ class Blog extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        <div className="price-button mt-md-3 mt-2">
+                                        {/* <div className="price-button mt-md-3 mt-2">
                                             <a className="btn text-uppercase" href="single.html">
                                                 Read More</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -113,10 +113,10 @@ class Blog extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        <div className="price-button mt-md-3 mt-2">
+                                        {/* <div className="price-button mt-md-3 mt-2">
                                             <a className="btn text-uppercase" href="single.html">
                                                 Read More</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -136,10 +136,10 @@ class Blog extends Component {
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
                                         <div className="price-button mt-md-3 mt-2">
-                                            <div className="price-button mt-md-3 mt-2">
+                                            {/* <div className="price-button mt-md-3 mt-2">
                                                 <a className="btn text-uppercase" href="single.html">
                                                     Read More</a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <div className="card-header p-0">
@@ -169,10 +169,10 @@ class Blog extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        <div className="price-button mt-md-3 mt-2">
+                                        {/* <div className="price-button mt-md-3 mt-2">
                                             <a className="btn text-uppercase" href="single.html">
                                                 Read More</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
