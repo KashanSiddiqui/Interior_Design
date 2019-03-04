@@ -17,7 +17,7 @@ class Banner extends Component {
                 <h3 style={{fontSize:'300%'}}>Style and DCOR</h3>
                 <div className="css-typing"><p className="my-3 " style={{fontSize:"150%"}}>Bringing Creative interiors into life</p></div>
                 {/* <a href="single.html" className="read-more mt-3 btn">Read More </a> */}
-                <div><p>Décor Interior Design, Inc. is a turnkey commercial interior design firm that specializes in tenant improvements, office furniture solutions, and facility support services.
+                <div><p>Style & Decor is a Design firm having expertise in Interior designing, Product & 3D designing, Architecture & Construction. Feel free to contact us for further assistance.
                 <div ><a href='#plans' ><ContainedButtons text="Get A Quote" color='#96684F' margin='10px'/></a></div>
 </p></div>
               </div>

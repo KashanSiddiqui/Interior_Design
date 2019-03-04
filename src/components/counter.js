@@ -13,14 +13,15 @@ class Counter extends Component {
         <h2>Lets Talk</h2> </div>
         <div style={{width:'300px',margin:'0 auto'}}>
         <div style={{display:'inline-flex'}}>
-        <OutlinedTextFields text='Full Name'/>
-        <OutlinedTextFields text='Company Name'/>
+        <OutlinedTextFields text='Full Name' require/>
+        <OutlinedTextFields text='Phone Number' require/>
         </div>
-        <div style={{display:'flex'}}>
+        {/* <div style={{display:'flex'}}>
         <OutlinedTextFields text='Email'/>
         <OutlinedTextFields text='Phone Number'/>
-        </div>
+        </div> */}
         <div >
+        <OutlinedTextFields text='Email' require/>
         <OutlinedTextFields text='brief description' />
         </div>
         <div style={{marginTop:'25px',textAlign:'center'}}>

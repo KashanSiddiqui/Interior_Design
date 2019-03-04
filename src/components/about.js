@@ -28,7 +28,7 @@ class About extends Component {
                                         </div>
                                         <div className="col-lg-10">
                                             <h4 className="mb-3">Mission</h4>
-                                            <p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                                            <p>Our mission is to provide creative and timeless interiors by bringing together inspiration and imagination.</p>
                                         </div>
                                     </div>
                                 </div>

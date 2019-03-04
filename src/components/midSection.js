@@ -14,7 +14,7 @@ class MidSection extends Component {
                             <div className="col-md-6 mid-right-content text-left mt-4">
                                 <div className="row">
                                     <div className="col-md-4 mid-left-img">
-                                        <img src={require("../asssets/images/5.jpg")} alt="news image" className="img-fluid" />
+                                        <img src={require("../asssets/images/5.jpg")} alt="news image" className="img-fluid"  />
                                     </div>
                                     <div className="col-md-8 mid-right-info">
                                         {/* <h5 className="mb-4">Commercial Interior</h5> */}
@@ -41,7 +41,7 @@ class MidSection extends Component {
                                 </div> */}
                             </div>
                             <div className="col-md-6 mid-left-content text-left pl-lg-4">
-                                <img src={require("../asssets/images/whoweare.png")} alt="news image" className="img-fluid" />
+                                <img src={require("../asssets/images/whoweare.png")} alt="news image" className="img-fluid" style={{backgroundColor:'transparent'}} />
                             </div>
                         </div>
                     </div>

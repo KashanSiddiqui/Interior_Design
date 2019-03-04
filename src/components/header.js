@@ -42,13 +42,13 @@ class Header extends Component {
                                 {/* <!-- nav --> */}
                                 <nav className="py-4 d-lg-flex">
                                     <div id="logo">
-                                         <img src={require("../asssets/images/logo.png")} id='logo-img'/>
+                                         <img src={require("../asssets/images/logo.png")} className='img-width' id='logo-img'/>
                                     </div>
-                                    <label for="drop" className="toggle"><i class="fas fa-bars"></i></label>
+                                    <label for="drop" className="toggle customStyle" ><i className="fas fa-bars fa-2x customStyle" ></i></label>
                                     
                                          {/* <i class="material-icons" for="drop" className="toggle">add</i> */}
                                     <input type="checkbox" id="drop" />
-                                    <ul className="menu mt-2 ml-auto">
+                                    <ul className="menu  ml-auto">
                                         <li className="active"> <Link to="/">Home</Link></li> 
                                         <li><Link to="/about" className="scroll">About</Link></li>
                                         <li><a href="#blog" className="scroll">Blogs</a></li>

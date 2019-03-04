@@ -240,7 +240,7 @@ li > a:only-child:after {
     }
 
     #logo-img{
-        width: 70%;
+        width: 80%;
     }
 
     nav {
@@ -256,11 +256,11 @@ li > a:only-child:after {
     .menu {
         display: none;
     }
-
+    /* padding: 6px 15px; */
     /* Stylinf the toggle lable */
     .toggle {
         display: block;
-        padding: 6px 15px;
+        
         font-size: 16px;
         text-decoration: none;
         border: none;
@@ -285,7 +285,7 @@ li > a:only-child:after {
 
     .toggle:hover {
         color: #333;
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     /* Display Dropdown when clicked on Parent Lable */
@@ -550,7 +550,7 @@ a.read-more:hover {
     height: 365px;
     padding-bottom: 1em;
     box-shadow: 0 2px 15px #00000042;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: white;
 }
 
