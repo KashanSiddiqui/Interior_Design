@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Footer from './footer';
+import '../asssets/css/about.css'
 
 class About extends Component {
-  render() {
-    return (
-      <div className="About">
-      <Header/>
-                        {/* <!-- banner-bottom-wthree --> */}
-                        <section className="banner-bottom-wthree py-5" id="about">
-                        {/* <img src={require('../asssets/images/contact.jpg')}/> */}
+    render() {
+        return (
+            <div className="About">
+                <Header />
+                <div className="about-content" id="home">
+                    <div className="about-layer" style={{ height: '40vh' }}>
+                    <div className=" about-head ">
+                                <h3 className="tittle" style={{ color: 'white' }}>About Us<span>.</span></h3>
+                            </div>
+                    </div>
+                </div>
+
+                {/* <!-- banner-bottom-wthree --> */}
+                <section className="banner-bottom-wthree " id="about">
+                    {/* <img src={require('../asssets/images/contact.jpg')}/> */}
                     <div className="container py-md-5 px-lg-5">
-                        <div className="content-left-bottom text-center">
-                            <h3 className="tittle mb-lg-5 mb-4">About Us<span>.</span></h3>
-                        </div>
+
                         <div className="content-right-bottom mt-md-0 mt-3 text-center">
                             <p><strong className="text-capitalize">style & decor</strong> is a residential design firm based in Karachi(Pakistan). Through collaborations that combine the spirit of each client with the essence of their spaces, Style And Decor creates uniquely distinct experiences.</p>
                             {/* <p className="mt-2">Integer pulvinar leo id viverra feugiat.<strong className="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong> Sed porttitor orci vel fermentum elit maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.</p>
@@ -64,10 +71,10 @@ class About extends Component {
                     </div>
                 </section>
                 {/* <!-- //banner-bottom-wthree --> */}
-      <Footer/>
-      </div>
-    );
-  }
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default About;
