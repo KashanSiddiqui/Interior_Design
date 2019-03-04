@@ -1,0 +1,18 @@
+.about-content {
+    background: url(../images/about-banner.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 330px;
+}
+
+.about-layer {
+    min-height: 330px;
+    background: rgba(0, 0, 0, 0.68);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
