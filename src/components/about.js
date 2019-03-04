@@ -3,13 +3,17 @@ import Header from './header';
 import Footer from './footer';
 
 class About extends Component {
-  render() {
-    return (
-      <div className="About">
-      <Header/>
-                        {/* <!-- banner-bottom-wthree --> */}
-                        <section className="banner-bottom-wthree py-5" id="about">
-                        {/* <img src={require('../asssets/images/contact.jpg')}/> */}
+    render() {
+        return (
+            <div className="About">
+                <Header />
+                <div className="about-banner" style={{ backgroundColor: 'black', height: '60vh' }}>
+                    <div className=" ">
+                    </div>
+                </div>
+                {/* <!-- banner-bottom-wthree --> */}
+                <section className="banner-bottom-wthree py-5" id="about">
+                    {/* <img src={require('../asssets/images/contact.jpg')}/> */}
                     <div className="container py-md-5 px-lg-5">
                         <div className="content-left-bottom text-center">
                             <h3 className="tittle mb-lg-5 mb-4">About Us<span>.</span></h3>
@@ -64,10 +68,10 @@ class About extends Component {
                     </div>
                 </section>
                 {/* <!-- //banner-bottom-wthree --> */}
-      <Footer/>
-      </div>
-    );
-  }
+                <Footer />
+            </div>
+        );
+    }
 }
 
 export default About;

@@ -10,16 +10,16 @@ class Banner extends Component {
       <div className="Banner" >
         {/* <!-- /banner --> */}
         <div className="main-content" id="home">
-          <div className="layer" style={{height:'100vh'}}>
+          <div className="layer" style={{ height: '100vh' }}>
 
             <div className="container ">
               <div className="banner-info-w3layouts ">
-                <h3 style={{fontSize:'300%'}}>Style and DCOR</h3>
-                <div className="css-typing"><p className="my-3 " style={{fontSize:"150%"}}>Bringing Creative interiors into life</p></div>
+                <h3 style={{ fontSize: '300%' }}>Style and DCOR</h3>
+                <div className="css-typing"><p className="my-3 " style={{ fontSize: "150%" }}>Bringing Creative interiors into life</p></div>
                 {/* <a href="single.html" className="read-more mt-3 btn">Read More </a> */}
                 <div><p>Style & Decor is a Design firm having expertise in Interior designing, Product & 3D designing, Architecture & Construction. Feel free to contact us for further assistance.
-                <div ><a href='#plans' ><ContainedButtons text="Get A Quote" color='#96684F' margin='10px'/></a></div>
-</p></div>
+                <div ><a href='#plans' ><ContainedButtons text="Get A Quote" color='#96684F' margin='10px' /></a></div>
+                </p></div>
               </div>
             </div>
           </div>
