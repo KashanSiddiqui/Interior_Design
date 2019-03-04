@@ -14,6 +14,7 @@ import MaintenanceServices from './maintenanceServices';
 import About from './about';
 import Header from './header';
 import Banner from './banner';
+import SliderReactSlick from './slider'
 // import Header1 from '../extra/Header';
 // import '../asssets/css/font-awsome.css';
 
@@ -25,9 +26,9 @@ class Home extends Component {
                         <Header />
                 <Banner/>
                 {/* <!--// mian-c//ontent --> */}
-                
                 <MaintenanceServices/>
-                <MidSection/>
+                {/* <SliderReactSlick/> */}
+                <MidSection/> 
                 <Gallery/>
                 <Counter/>
                 <Blog/>
