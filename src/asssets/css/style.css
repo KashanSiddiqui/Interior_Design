@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family:  'ProximaNovaRegular' !important;
     scroll-behavior: smooth;
 }
 
@@ -37,7 +37,7 @@ input[type="search"] {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 h1,
@@ -49,14 +49,14 @@ h6 {
     margin: 0;
     letter-spacing: 1px;
     font-weight: 400;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 p {
     font-size: 0.9em;
     color: #5e5e5e;
-    line-height: 1.9em;
-    letter-spacing: 1px;
+    /* line-height: 1.9em; */
+    /* letter-spacing: 1px; */
     text-align: justify;
 }
 
@@ -102,7 +102,7 @@ nav {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
-    font-family: 'Oswald', sans-serif;
+    font-family: 'ProximaNovaRegular' !important;
 
 }
 
@@ -151,7 +151,7 @@ nav ul.menu li a {
     padding: 0.5em 1.5em;
     background: transparent;
     font-weight: 400;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 
@@ -437,7 +437,7 @@ li > a:only-child:after {
     letter-spacing: 1px;
     display: block;
     color: #fcd000;
-    font-family: 'Pacifico', cursive;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 .banner-info-w3layouts p {
@@ -547,11 +547,12 @@ a.read-more:hover {
 
 .ab-content-inner {
     padding: 2em 1em;
-    height: 365px;
+    height: 391px;
     padding-bottom: 1em;
     box-shadow: 0 2px 15px #00000042;
     border-radius: 5px;
     background-color: white;
+    margin-bottom: 25px;
 }
 
 .ab-info h5 {
@@ -671,7 +672,7 @@ span.title {
     font-size: 1.4em;
     letter-spacing: 2px;
     display: block;
-    font-family: 'Pacifico', cursive;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 .content-right-bottom p {
@@ -1078,7 +1079,7 @@ h5.card-title {
     color: #1c2833;
     font-size: 0.9em;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'ProximaNovaRegular' !important;
 }
 
 .contact-form textarea {
@@ -1568,9 +1569,6 @@ a.move-top span {
 
 }
 
-.bharwa{
-    background-color: red !important
-}
 
 /*-- //Responsive design --*/
 /* .textareaDisplay{
@@ -1578,4 +1576,8 @@ a.move-top span {
 } */
 .MuiFormControl-root-37{
     display: grid !important
+}
+
+.MuiButton-label-4{
+color: white
 }

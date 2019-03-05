@@ -31,7 +31,7 @@ class Home extends Component {
                 <MidSection/> 
                 <Gallery/>
                 <Counter/>
-                <Blog/>
+                {/* <Blog/> */}
                 {/* <ClientReviews/> */}
                 
                 <Footer />

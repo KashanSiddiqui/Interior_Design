@@ -17,8 +17,8 @@ class MaintenanceServices extends Component {
                                 <div className="ab-content-inner">
                                     <img src={require("../asssets/images/2.jpg")} alt="news image" className="img-fluid" />
                                     <div className="ab-info-con">
-                                        <h4>Floor Design</h4>
-                                        <p>Integer sit amet mattis quam, sit amet ultricies velit ullamcorper.</p>
+                                        <h4>Interior Design</h4>
+                                        <p> We offer budget based personalized designs and lavishly built home designs for flats and bungalows.</p>
                                     </div>
                                 </div>
                             </div>
@@ -29,7 +29,8 @@ class MaintenanceServices extends Component {
                                     <img src={require("../asssets/images/1.jpg")} alt="news image" className="img-fluid" />
                                     <div className="ab-info-con">
                                         <h4>Commercial Interior</h4>
-                                        <p>Integer sit amet mattis quam, sit amet ultricies velit ullamcorper.</p>
+                                        <p>When you have a clear brand message that radiates through everything you do it helps to distinguish you from your competitors
+We can help with that.</p>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +41,8 @@ class MaintenanceServices extends Component {
                                     <img src={require("../asssets/images/3.jpg")} alt="news image" className="img-fluid" />
                                     <div className="ab-info-con">
                                         <h4>Exterior Design</h4>
-                                        <p>Integer sit amet mattis quam, sit amet ultricies velit ullamcorper.</p>
+                                        <p>We can make important design decisions that are going to impact the appearance of your home.
+When it comes to exteriors of home, symmetry and balance has a key role to play</p>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +53,7 @@ class MaintenanceServices extends Component {
                                     <img src={require("../asssets/images/4.jpg")} alt="news image" className="img-fluid" />
                                     <div className="ab-info-con">
                                         <h4>Work space Design</h4>
-                                        <p>Integer sit amet mattis quam, sit amet ultricies velit ullamcorper.</p>
+                                        <p>Great office design goes beyond the physical, practical concerns and takes into account the psychological and emotional well-being of the people using the space.</p>
                                     </div>
                                 </div>
                             </div>

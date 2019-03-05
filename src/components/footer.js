@@ -17,10 +17,10 @@ class Footer extends Component {
                                           Style &  Dcor
                         </a>
                                     </h2>
-                                    <p className="my-3">Donec consequat sam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
-                                    <p>
+                                    <p className="my-3">Style and Decor is a most innovative designing firm based in Karachi. We design custom homes and renovations. Our firm is full service from concept through construction.</p>
+                                    {/* <p>
                                         Id quod possimusapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci.
-                        </p>
+                        </p> */}
                                 </div>
                                 <div className="col-lg-2 col-md-6 mt-md-0 mt-5">
                                     <div className="footer-w3pvt">
@@ -94,15 +94,21 @@ class Footer extends Component {
                                         <hr />
                                         <div className="last-w3ls-contact">
                                             <p>
-                                                <a href="mailto:example@email.com">info@example.com</a>
+                                                <a href="#">Styledecor786@gmail.com</a>
                                             </p>
                                         </div>
                                         <div className="last-w3ls-contact my-2">
-                                            <p>+ 456 123 7890</p>
+                                            <p>02136673223</p>
+                                        </div>
+                                        <div className="last-w3ls-contact my-2">
+                                            <p>03131021018</p>
+                                        </div>
+                                        <div className="last-w3ls-contact my-2">
+                                            <p>03171248909</p>
                                         </div>
                                         <div className="last-w3ls-contact">
-                                            <p>+ 90 nsequursu dsdesdc,
-                                    <br />xxx Honey State 049436.</p>
+                                            <p>1,2 ground floor Blue sky Residency,
+                                    <br /> Block H, North Nazimabad</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +116,7 @@ class Footer extends Component {
                             </div>
 
                             <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2019 Dcor. All Rights Reserved | Design by
-                    <a href="http://w3layouts.com/"> W3layouts </a>
+                    <a href="#"> Oculend </a>
                             </p>
                             <div className="w3ls-footer text-center mt-4">
                                 <ul className="list-unstyled w3ls-icons">

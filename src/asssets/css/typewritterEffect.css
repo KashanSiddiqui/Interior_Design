@@ -1,6 +1,6 @@
 .css-typing p {
     border-right: .15em solid orange;
-    font-family: "Courier";
+    font-family: 'ProximaNovaRegular' !important;
     font-size: 14px;
     white-space: nowrap;
     overflow: hidden;

@@ -30,8 +30,9 @@ class Contact extends Component {
                                     </div>
                                     <div className="col-md-9 text-left">
                                         <h6>Location</h6>
-                                        <p>The company name
-                                <br />New York City. </p>
+                                        <p>Style and Decor
+                                <br />1,2 ground floor Blue sky Residency,
+Block H, North Nazimabad </p>
                                     </div>
                                 </div>
                             </li>
@@ -43,9 +44,8 @@ class Contact extends Component {
                                     </div>
                                     <div className="col-md-9 text-left">
                                         <h6>Email</h6>
-                                        <a href="mailto:info@example.com">mail@example.com</a>
-                                        <br />
-                                        <a href="mailto:info@example.com">mail2@example.com</a>
+                                        <a href="#">Styledecor786@gmail.com</a>
+                                        
                                     </div>
                                 </div>
                             </li>
@@ -56,8 +56,9 @@ class Contact extends Component {
                                     </div>
                                     <div className="col-md-9 text-left">
                                         <h6>Phone Number</h6>
-                                        <p>+ 1234567890</p>
-                                        <p>+ 0987654321</p>
+                                        <p>02136673223</p>
+                                        <p>03131021018</p>
+                                        <p>03171248909</p>
                                     </div>
                                 </div>
                             </li>
@@ -103,7 +104,10 @@ class Contact extends Component {
                         </div>
                         <div className="map mt-md-5 mt-4">
 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783" className="map" style={{ border: "0", allowfullscreen: "" }}></iframe> </div>
+                            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783" className="map" style={{ border: "0", allowfullscreen: "" }}></iframe> */}
+                            {/* <iframe src="https://www.google.com/maps/embed?pb=" }></iframe> */}
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.812812169565!2d67.0498403150044!3d24.93844598401724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU2JzE4LjQiTiA2N8KwMDMnMDcuMyJF!5e0!3m2!1sen!2s!4v1551784473188" className="map" style={{ border: "0", allowfullscreen: "" }} ></iframe>
+                             </div>
                     </div>
 
                 </section>
