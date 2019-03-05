@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Footer from './footer';
-import '../asssets/css/about.css'
+import '../asssets/css/contact.css'
 
 
 class Contact extends Component {
@@ -9,8 +9,8 @@ class Contact extends Component {
         return (
             <div className="Contact">
                 <Header />
-                <div className="about-content" id="home">
-                    <div className="about-layer" style={{ height: '40vh' }}>
+                <div className="contact-content" id="home">
+                    <div className="contact-layer" style={{ height: '40vh' }}>
                     <div className=" about-head ">
                                 <h3 className="tittle" style={{ color: 'white' }}>Contact Us<span>.</span></h3>
                             </div>
