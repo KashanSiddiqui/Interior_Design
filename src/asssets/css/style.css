@@ -1578,6 +1578,11 @@ a.move-top span {
     display: grid !important
 }
 
+.MuiOutlinedInput-root-120 .MuiOutlinedInput-notchedOutline-127 {
+    display: grid !important
+}
+
 .MuiButton-label-4{
 color: white
 }
+

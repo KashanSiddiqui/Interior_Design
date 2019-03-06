@@ -16,10 +16,10 @@ class Counter extends Component {
         <OutlinedTextFields text='Full Name' require/>
         <OutlinedTextFields text='Phone Number' require/>
         </div>
-        {/* <div style={{display:'flex'}}>
+         {/* <div style={{display:'flex'}}>
         <OutlinedTextFields text='Email'/>
         <OutlinedTextFields text='Phone Number'/>
-        </div> */}
+        </div>  */}
         <div >
         <OutlinedTextFields text='Email' require/>
         <OutlinedTextFields text='brief description' />

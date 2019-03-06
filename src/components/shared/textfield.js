@@ -42,7 +42,6 @@ class OutlinedTextFields extends React.Component {
     return (
       <div>
         <TextField
-          id="outlined-name"
           className={classes.textField}
            InputProps={{
             classes: {

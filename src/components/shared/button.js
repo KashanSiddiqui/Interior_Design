@@ -18,7 +18,7 @@ function ContainedButtons(props) {
   return (
     <div >
       
-      <Button variant="contained"  className={classes.button} style={{marginTop:props.margin,backgroundColor:props.color ,width:props.width}} >
+      <Button variant="contained"  className={classes.button} style={{marginTop:props.margin,backgroundColor:props.color ,width:props.width,color:props.Textcolor}} >
         {props.text}
       </Button>
       
