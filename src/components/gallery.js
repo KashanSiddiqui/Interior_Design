@@ -61,7 +61,7 @@ class Gallery extends Component {
                         <div id="gal2" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g2.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Blue is the color of sky and sea. It symbolizes confidence, faith, truth and heaven. Combining it with the white makes it more beautiful.</p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ class Gallery extends Component {
                         <div id="gal3" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g3.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Even the smallest things matter ! Dining tables must be sleek and comfortable.</p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ class Gallery extends Component {
                         <div id="gal4" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g4.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Shiny white tiles creating an eye soothing view of the kitchen with a small touch of brown patterned wallpaper</p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ class Gallery extends Component {
                         <div id="gal5" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g5.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Wake up every day with a refreshing view of the wallpaper in your bed room, hence making the start of your day perfect</p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ class Gallery extends Component {
                         <div id="gal6" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g6.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Green interior always makes a soul touching enviornment !</p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
