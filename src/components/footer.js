@@ -14,7 +14,7 @@ class Footer extends Component {
                                 <div className="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
                                     <h2>
                                         <a className="navbar-brand" href="index.html"><span className="fa fa-gg" aria-hidden="true"></span>
-                                          Style &  Dcor
+                                          Style &  Decor
                         </a>
                                     </h2>
                                     <p className="my-3">Style and Decor is a most innovative designing firm based in Karachi. We design custom homes and renovations. Our firm is full service from concept through construction.</p>
@@ -115,7 +115,7 @@ class Footer extends Component {
 
                             </div>
 
-                            <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2019 Dcor. All Rights Reserved | Design by
+                            <p className="copy-right-grids text-li text-center my-sm-4 my-4">© 2019 Decor. All Rights Reserved | Design by
                     <a href="#"> Oculend </a>
                             </p>
                             <div className="w3ls-footer text-center mt-4">
