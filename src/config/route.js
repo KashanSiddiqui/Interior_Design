@@ -7,6 +7,8 @@ import {
 import About from '../components/about'
 import Contact from '../components/contact'
 import Home from '../components/home'
+import Projects from '../components/projects'
+import SingleListing from '../components/singleListing'
 import history from './history';
 import ScrollToTop from 'react-router-scroll-top';
 // history={history}
@@ -43,6 +45,8 @@ const BasicRouting = () => {
             <Route path="/about" component={About} />
             
             <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/singleListing" component={SingleListing} />
           <ScrollToTop/>
             
         

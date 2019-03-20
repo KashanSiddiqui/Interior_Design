@@ -3,6 +3,9 @@ import '../asssets/css/font-awesome.css';
 import '../asssets/css/style.css';
 import '../asssets/css/bootstrap.css';
 import Footer from './footer.js';
+import Header from './header';
+import Modal from '@material-ui/core/Modal';
+
 
 class SingleListing extends Component {
   render() {
@@ -10,36 +13,7 @@ class SingleListing extends Component {
       <div className="SingleListing">
       <div class="main-content page-inner" id="home">
         {/* <!-- header --> */}
-        <header>
-            <div className="container-fluid px-lg-5">
-                {/* <!-- nav --> */}
-                <nav className="py-4 d-lg-flex">
-                    <div id="logo">
-                        <h1> <a href="index.html"><span className="fa fa-gg" aria-hidden="true"></span> Dcor</a></h1>
-                    </div>
-                    <label for="drop" className="toggle">Menu</label>
-                    <input type="checkbox" id="drop" />
-                    <ul className="menu mt-2 ml-auto">
-                        <li className="active"><a href="index.html">Home</a></li>
-                        <li><a href="#about" className="scroll">About</a></li>
-                        <li><a href="#blog" className="scroll">Blogs</a></li>
-                        <li>
-                            {/* <!-- First Tier Drop Down --> */}
-                            <label for="drop-2" className="toggle">Dropdown <span className="fa fa-angle-down" aria-hidden="true"></span> </label>
-                            <a href="#">Dropdown <span className="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <input type="checkbox" id="drop-2" />
-                            <ul className="inner-ul">
-                                <li><a className="scroll" href="#gallery">Gallery</a></li>
-                                <li><a href="#plans" className="scroll">Plans</a></li>
-                                <li><a href="#blog" className="scroll">Events</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#contact" className="scroll">Contact</a></li>
-                    </ul>
-                </nav>
-                {/* <!-- //nav --> */}
-            </div>
-        </header>
+        <Header/>
         {/* <!-- //header --> */}
 </div>
         {/* <!-- //banner --> */}

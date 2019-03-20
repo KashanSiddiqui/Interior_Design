@@ -51,6 +51,7 @@ class Header extends Component {
                             <ul className="menu  ml-auto">
                                 <li className="active"> <Link to="/">Home</Link></li>
                                 <li><Link to="/about" className="scroll">About</Link></li>
+                                <li><Link to="/projects" className="scroll">Projects</Link></li>
                                 {/* <li><a href="#blog" className="scroll">Blogs</a></li> */}
                                 {/* <!-- First Tier Drop Down --> */}
                                 {/* <li>
