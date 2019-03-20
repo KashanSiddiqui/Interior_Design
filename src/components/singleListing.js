@@ -4,10 +4,21 @@ import '../asssets/css/style.css';
 import '../asssets/css/bootstrap.css';
 import Footer from './footer.js';
 import Header from './header';
-import Modal from '@material-ui/core/Modal';
+// import Modal from '@material-ui/core/Modal';
+// import Typography from '@material-ui/core/Typography';
+// import PropTypes from 'prop-types';
+// import { withStyles } from '@material-ui/core/styles';
 
+
+  
 
 class SingleListing extends Component {
+
+
+    
+
+    
+      
   render() {
     return (
       <div className="SingleListing">
@@ -40,7 +51,7 @@ class SingleListing extends Component {
                         <p className="mt-2">Integer pulvinar leo id viverra feugiat.<strong className="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong> Sed porttitor orci vel fermentum elit maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.</p>
                     </div>
                 </div>
-                <div className="col-lg-4 single-page-img">
+                <div className="col-lg-4 single-page-img" onClick={this.handleOpen}>
                     <img src={require("../asssets/images/g3.jpg")} alt="news image" className="img-fluid"/>
                 </div>
 
@@ -48,12 +59,13 @@ class SingleListing extends Component {
         </div>
         {/* <!-- //banner-bottom-wthree --> */}
     </section>
-
+    
     <Footer/>
 
       </div>
     );
   }
 }
+
 
 export default SingleListing;
