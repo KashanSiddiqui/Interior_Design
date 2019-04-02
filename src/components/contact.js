@@ -56,9 +56,9 @@ Block H, North Nazimabad </p>
                                     </div>
                                     <div className="col-md-9 text-left">
                                         <h6>Phone Number</h6>
-                                        <p>02136673223</p>
-                                        <p>03131021018</p>
-                                        <p>03171248909</p>
+                                        <p>(021) 36673223</p>
+                                        <p>+92 313 1021018</p>
+                                        <p>+92 317 1248909 </p>
                                     </div>
                                 </div>
                             </li>

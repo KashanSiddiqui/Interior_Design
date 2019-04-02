@@ -98,13 +98,13 @@ class Footer extends Component {
                                             </p>
                                         </div>
                                         <div className="last-w3ls-contact my-2">
-                                            <p>02136673223</p>
+                                            <p>(021) 36673223</p>
                                         </div>
                                         <div className="last-w3ls-contact my-2">
-                                            <p>03131021018</p>
+                                            <p>+92 313 1021018</p>
                                         </div>
                                         <div className="last-w3ls-contact my-2">
-                                            <p>03171248909</p>
+                                            <p>+92 317 1248909 </p>
                                         </div>
                                         <div className="last-w3ls-contact">
                                             <p>1,2 ground floor Blue sky Residency,
