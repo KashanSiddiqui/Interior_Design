@@ -2,21 +2,70 @@ import React, { Component } from 'react';
 import Footer from './footer';
 import Header from './header';
 import { Link } from 'react-router-dom';
+import { db } from '../config/firebaseConfig';
 
 class Projects extends Component {
+
+    state={
+        projects:[]
+    }
+
+componentDidMount(){
+    let that=this;
+    db.collection('projects').get()
+    .then((snapshot)=>{
+        snapshot.docs.forEach(doc=>{
+            console.log(doc.data())
+            let arr=this.state.projects
+            arr.push(doc.data())
+            this.setState({
+                projects:arr
+            })
+        })
+        
+    })
+}
+
   render() {
     return (
       <div className="Blog">
       <Header/>
-        {/* <!-- blog --> */}
+    
         <section className="blog_w3ls py-5" id="blog">
                     <div className="container py-xl-5 py-lg-3">
                         <div className="header text-center">
                             <h3 className="tittle mb-lg-5 mb-4">Other Services<span>.</span></h3>
                         </div>
                         <div className="row">
-                            {/* <!-- blog grid --> */}
-                            <div className="col-lg-4 col-md-6">
+                        {this.state.projects.map((item,index)=>{
+                                return(
+                                    <div className="col-lg-4 col-md-6">
+                            <Link to='/singleListing'>                            
+                                <div className="card border-0 med-blog">
+                                    <div className="card-header p-0">
+                                        <a href="single.html">
+                                            <img className="card-img-bottom" src={item.banner_image_url} alt="image" />
+                                        </a>
+                                    </div>
+                                    <div className="card-body border border-top-0 pb-5">
+                                        <div className="mb-3">
+                                            <h5 className="blog-title card-title font-weight-bold m-0">
+                                                <a href="single.html">{item.title}</a>
+                                            </h5>
+                                            {/* <div className="blog_w3icon">
+                                                <span>
+                                                    Jan 12, 2019 - loremipsum</span>
+                                            </div> */}
+                                        </div>
+                                        <p className="mb-4">{item.description}</p>
+                                        
+                                    </div>
+                                </div>
+                            </Link>
+                            </div>
+                        )
+                        })}
+                            {/* <div className="col-lg-4 col-md-6">
                             <Link to='/singleListing'>                            
                                 <div className="card border-0 med-blog">
                                     <div className="card-header p-0">
@@ -35,17 +84,13 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        {/* <div className="price-button mt-md-3 mt-2">
-                                            <a className="btn text-uppercase" href="single.html">
-                                                Read More</a>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
                             </Link>
-                            </div>
-                            {/* <!-- //blog grid --> */}
-                            {/* <!-- blog grid --> */}
-                            <div className="col-lg-4 col-md-6 mt-md-0 mt-5">
+                            </div> */}
+                            
+                            {/* <div className="col-lg-4 col-md-6 mt-md-0 mt-5">
                             <Link to='/singleListing'>
                                 <div className="card border-0 med-blog">
                                     <div className="card-body border border-bottom-0 pb-5">
@@ -59,10 +104,7 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        {/* <div className="price-button mt-md-3 mt-2">
-                                            <a className="btn text-uppercase" href="single.html">
-                                                Read More</a>
-                                        </div> */}
+                                        
                                     </div>
                                     <div className="card-header p-0">
                                         <a href="single.html">
@@ -72,8 +114,7 @@ class Projects extends Component {
                                 </div>
                                 </Link>
                             </div>
-                            {/* <!-- //blog grid --> */}
-                            {/* <!-- blog grid --> */}
+                            
                             <div className="col-lg-4 col-md-6 mt-lg-0 mt-5">
                             <Link to='/singleListing'>
                                 <div className="card border-0 med-blog">
@@ -93,18 +134,15 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        {/* <div className="price-button mt-md-3 mt-2">
-                                            <a className="btn text-uppercase" href="single.html">
-                                                Read More</a>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
                                 </Link>
-                            </div>
-                            {/* <!-- //blog grid --> */}
+                            </div> */}
+                            
                         </div>
-                        <div className="row mt-5">
-                            {/* <!-- blog grid --> */}
+                        {/* <div className="row mt-5">
+                            
                             <div className="col-lg-4 col-md-6">
                             <Link to='/singleListing'>
                                 <div className="card border-0 med-blog">
@@ -124,16 +162,12 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        {/* <div className="price-button mt-md-3 mt-2">
-                                            <a className="btn text-uppercase" href="single.html">
-                                                Read More</a>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
                                 </Link>
                             </div>
-                            {/* <!-- //blog grid --> */}
-                            {/* <!-- blog grid --> */}
+                            
                             <div className="col-lg-4 col-md-6 mt-md-0 mt-5">
                             <Link to='/singleListing'>
                                 <div className="card border-0 med-blog">
@@ -149,10 +183,7 @@ class Projects extends Component {
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
                                         <div className="price-button mt-md-3 mt-2">
-                                            {/* <div className="price-button mt-md-3 mt-2">
-                                                <a className="btn text-uppercase" href="single.html">
-                                                    Read More</a>
-                                            </div> */}
+                                            
                                         </div>
                                     </div>
                                     <div className="card-header p-0">
@@ -163,8 +194,7 @@ class Projects extends Component {
                                 </div>
                                 </Link>
                             </div>
-                            {/* <!-- //blog grid --> */}
-                            {/* <!-- blog grid --> */}
+                            
                             <div className="col-lg-4 col-md-6 mt-lg-0 mt-5">
                             <Link to='/singleListing'>
                                 <div className="card border-0 med-blog">
@@ -184,16 +214,13 @@ class Projects extends Component {
                                             </div>
                                         </div>
                                         <p className="mb-4">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                                        {/* <div className="price-button mt-md-3 mt-2">
-                                            <a className="btn text-uppercase" href="single.html">
-                                                Read More</a>
-                                        </div> */}
+                                        
                                     </div>
                                 </div>
                                 </Link>
                             </div>
-                            {/* <!-- //blog grid --> */}
-                        </div>
+                            
+                        </div> */}
                     </div>
                 </section>
                 {/* <!-- //blog --> */}
