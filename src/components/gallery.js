@@ -51,7 +51,7 @@ class Gallery extends Component {
                         <div id="gal1" className="pop-overlay animate">
                             <div className="popup">
                                 <img src={require("../asssets/images/g1.jpg")} alt="Popup Image" className="img-fluid" />
-                                <p className="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
+                                <p className="mt-4">Beautiful golden lamps hanging from the rooftop, making a great contrast with the wall color. </p>
                                 <a className="close" href="#gallery">&times;</a>
                             </div>
                         </div>
