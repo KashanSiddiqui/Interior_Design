@@ -68,41 +68,6 @@ componentDidMount(){
                        
                        
                        
-                        {/* <div className="row news-grids text-center">
-                            <Bounce left>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal1"><img src={require("../asssets/images/g1.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-                          
-                          
-                            <Bounce right>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal2"><img src={require("../asssets/images/g2.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-                            <Bounce left>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal3"><img src={require("../asssets/images/g3.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-                            <Bounce right>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal4"><img src={require("../asssets/images/g4.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-                            <Bounce left>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal5"><img src={require("../asssets/images/g5.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-                            <Bounce right>
-                            <div className="col-md-4 gal-img">
-                                <a href="#gal6"><img src={require("../asssets/images/g6.jpg")} alt="news image" className="img-fluid" /></a>
-                            </div>
-                            </Bounce>
-
-                        </div> */}
 
                         {/* <!-- popup--> */}
                         <div id="gal1" className="pop-overlay animate">
