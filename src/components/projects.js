@@ -43,36 +43,65 @@ componentDidMount(){
                         <div className="row">
                         {this.state.projects.map((item,index)=>{
                                 return(
-                                    <div className="col-lg-4 col-md-6">
-                            {/* <Link to='/singleListing'>                             */}
-                            <div onClick={()=>
-                            {this.props.PROJECT_DATA(item)
-                            history.push('/singleListing')
-                            }
-                            }>
-                                <div className="card border-0 med-blog">
-                                    <div className="card-header p-0">
-                                        <a href="#">
-                                            <img className="card-img-bottom" src={item.banner_image_url} alt="image" />
-                                        </a>
-                                    </div>
-                                    <div className="card-body border border-top-0 pb-5">
-                                        <div className="mb-3">
-                                            <h5 className="blog-title card-title font-weight-bold m-0">
-                                                <a href="single.html">{item.title}</a>
-                                            </h5>
-                                            {/* <div className="blog_w3icon">
-                                                <span>
-                                                    Jan 12, 2019 - loremipsum</span>
-                                            </div> */}
+                                    ((index+1)%2==0)?(
+                                        <div className="col-lg-4 col-md-6">
+                                        {/* <Link to='/singleListing'>                             */}
+                                        <div onClick={()=>
+                                        {this.props.PROJECT_DATA(item)
+                                        history.push('/singleListing')
+                                        }
+                                        }>
+                                            <div className="card border-0 med-blog">
+                                                <div className="card-header p-0">
+                                                    <a href="#">
+                                                        <img className="card-img-bottom" src={item.banner_image_url} alt="image" />
+                                                    </a>
+                                                </div>
+                                                <div className="card-body border border-top-0 pb-5">
+                                                    <div className="mb-3">
+                                                        <h5 className="blog-title card-title font-weight-bold m-0">
+                                                            <a href="#">{item.title}</a>
+                                                        </h5>
+                                                        {/* <div className="blog_w3icon">
+                                                            <span>
+                                                                Jan 12, 2019 - loremipsum</span>
+                                                        </div> */}
+                                                    </div>
+                                                    <p className="mb-4">{item.description}</p>
+                                                    
+                                                </div>
+                                            </div>
+                                            </div>
+                                        {/* </Link> */}
                                         </div>
-                                        <p className="mb-4">{item.description}</p>
-                                        
-                                    </div>
-                                </div>
-                                </div>
-                            {/* </Link> */}
-                            </div>
+                                    ):(
+                                    <div className="col-lg-4 col-md-6 mt-md-0 mt-5">
+                                    {/* <Link to='/singleListing'> */}
+                                    <div onClick={()=>
+                                        {this.props.PROJECT_DATA(item)
+                                        history.push('/singleListing')
+                                        }
+                                        }>
+                                        <div className="card border-0 med-blog">
+                                            <div className="card-body border border-bottom-0 pb-5">
+                                                <div className="mb-3">
+                                                    <h5 className="blog-title card-title font-weight-bold m-0">
+                                                        <a href="#">{item.title}</a>
+                                                    </h5>
+                                                    
+                                                </div>
+                                                <p className="mb-4">{item.description}</p>                                                
+                                            </div>
+                                            <div className="card-header p-0">
+                                                <a href="#">
+                                                    <img className="card-img-bottom" src={item.banner_image_url} alt="image" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        {/* </Link> */}
+                                    </div>)
+                                 
                         )
                         })}
                             {/* <div className="col-lg-4 col-md-6">

@@ -40,18 +40,27 @@ componentDidMount(){
                             <h3 className="tittle mb-lg-5 mb-3">How we Do<span>.</span></h3>
                         </div>
                         <div className="row news-grids text-center" >
-                        {this.state.projects.map((item,index)=>{
+                        {this.state.projects.slice(0, 6).map((item,index)=>{
                             return(
                                 
-                        
-                            <Bounce left >
-                            <div className="col-md-4 gal-img" onClick={()=>
-                                {this.props.PROJECT_DATA(item)
-                                history.push('/singleListing')
-                                } }>
-                                <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
-                            </div>
-                            </Bounce>
+                                ((index+1)%2==0)?
+                                (<Bounce left >
+                                    <div className="col-md-4 gal-img" onClick={()=>
+                                        {this.props.PROJECT_DATA(item)
+                                        history.push('/singleListing')
+                                        } }>
+                                        <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
+                                    </div>
+                                    </Bounce>):
+                                    (<Bounce right >
+                                        <div className="col-md-4 gal-img" onClick={()=>
+                                            {this.props.PROJECT_DATA(item)
+                                            history.push('/singleListing')
+                                            } }>
+                                            <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
+                                        </div>
+                                        </Bounce>)
+                            
                         
                          )   
                         })}
