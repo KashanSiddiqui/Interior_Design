@@ -1,15 +1,16 @@
-import { EVENT_DETAILS } from "../actions/event-actions";
-import { EDIT_OBJ } from "../actions/root.action";
+// import { EVENT_DETAILS } from "../actions/event-actions";
+import { SINGLE_PROJECT_DATA } from "../actions/root.action";
 
 const INITIAL_STATE = {
-edit_obj : {}
+project_data : {}
 }
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case EDIT_OBJ : 
+        case SINGLE_PROJECT_DATA : 
+        console.log(action.payload)
         return({
-            edit_obj : action.payload
+            project_data : action.payload
         })
         default: 
         return state

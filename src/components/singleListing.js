@@ -4,6 +4,8 @@ import '../asssets/css/style.css';
 import '../asssets/css/bootstrap.css';
 import Footer from './footer.js';
 import Header from './header';
+import { connect } from 'react-redux';
+
 // import Modal from '@material-ui/core/Modal';
 // import Typography from '@material-ui/core/Typography';
 // import PropTypes from 'prop-types';
@@ -32,30 +34,35 @@ class SingleListing extends Component {
     
 
 
-    
+        {console.log(this.props.projectdata)}
     <section className="banner-bottom-wthree py-5" id="about">
     {/* <!-- banner-bottom-wthree --> */}
         <div className="container py-md-5 px-lg-5">
             <div className="content-left-bottom text-center">
-                <h3 className="tittle mb-lg-5 mb-4">Single Page<span>.</span></h3>
+                <h3 className="tittle mb-lg-5 mb-4">{this.props.projectdata.title}<span>.</span></h3>
             </div>
             <div className="content-right-bottom mt-md-0 mt-3 text-left">
-                <img src={require("../asssets/images/banner1.jpg")} alt="news image" className="img-fluid"/>
-                <p className="mt-4 text-left">Sed porttitor orci vel fermentum elit maximus. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.Integer pulvinar leo id viverra feugiat.<strong className="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong> Sed porttitor orci vel fermentum elit maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.</p>
-                <p className="mt-3 text-left"><strong className="text-capitalize ">Integer pulvinar leo id viverra feugiat.</strong> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula.</p>
+                <img src={this.props.projectdata.banner_image_url} alt="news image" className="img-fluid"/>
+                <p className="mt-4 text-left">{this.props.projectdata.description}</p>
+                {/* <p className="mt-3 text-left"><strong className="text-capitalize ">Integer pulvinar leo id viverra feugiat.</strong> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula.</p> */}
             </div>
+            {this.props.projectdata.items.map((item,key)=>{
+                return(
             <div className="row banner-grids mt-lg-5">
-                <div className="col-lg-8 mid-right-info-single">
+                    <div className="col-lg-8 mid-right-info-single">
                     <div className="mid-right-info">
-                        <h4 className="mb-3 text-uppercase">Donec consequat sam libero tempore</h4>
-                        <p className="mt-2">Integer pulvinar leo id viverra feugiat.<strong className="text-capitalize"> Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.</strong> Sed porttitor orci vel fermentum elit maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.</p>
+                        <h4 className="mb-3 text-uppercase">{item.title}</h4>
+                        <p className="mt-2">{item.description}</p>
                     </div>
                 </div>
                 <div className="col-lg-4 single-page-img" onClick={this.handleOpen}>
-                    <img src={require("../asssets/images/g3.jpg")} alt="news image" className="img-fluid"/>
+                    <img src={item.img_url} alt="news image" className="img-fluid"/>
                 </div>
-
             </div>
+                )
+            })}
+                
+
         </div>
         {/* <!-- //banner-bottom-wthree --> */}
     </section>
@@ -68,4 +75,13 @@ class SingleListing extends Component {
 }
 
 
-export default SingleListing;
+function mapStateToProp(state) {
+    console.log(state)
+    return ({
+        projectdata: state.project_reducer.project_data,
+    })
+}
+
+export default connect(mapStateToProp,null)(SingleListing);
+
+// export default SingleListing;

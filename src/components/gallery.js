@@ -1,9 +1,35 @@
 import React, { Component } from 'react';
 import Bounce from 'react-reveal/Bounce';
+import { db } from '../config/firebaseConfig';
+import { connect } from 'react-redux';
+import { PROJECT_DATA } from '../redux/actions/root.action';
+import history from '../config/history'
 // import Bounce from 'react-reveal/Bounce';
 
 
 class Gallery extends Component {
+
+    state={
+        projects:[]
+    }
+
+componentDidMount(){
+    let that=this;
+    db.collection('projects').get()
+    .then((snapshot)=>{
+        snapshot.docs.forEach(doc=>{
+            console.log(doc.data())
+            let arr=this.state.projects
+            arr.push(doc.data())
+            this.setState({
+                projects:arr
+            })
+        })
+        
+    })
+}
+
+
   render() {
     return (
       <div className="Gallery">
@@ -13,12 +39,34 @@ class Gallery extends Component {
                         <div className="header text-center">
                             <h3 className="tittle mb-lg-5 mb-3">How we Do<span>.</span></h3>
                         </div>
-                        <div className="row news-grids text-center">
-                        <Bounce left>
+                        <div className="row news-grids text-center" >
+                        {this.state.projects.map((item,index)=>{
+                            return(
+                                
+                        
+                            <Bounce left >
+                            <div className="col-md-4 gal-img" onClick={()=>
+                                {this.props.PROJECT_DATA(item)
+                                history.push('/singleListing')
+                                } }>
+                                <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
+                            </div>
+                            </Bounce>
+                        
+                         )   
+                        })}
+                        </div>
+                       
+                       
+                       
+                        {/* <div className="row news-grids text-center">
+                            <Bounce left>
                             <div className="col-md-4 gal-img">
                                 <a href="#gal1"><img src={require("../asssets/images/g1.jpg")} alt="news image" className="img-fluid" /></a>
                             </div>
                             </Bounce>
+                          
+                          
                             <Bounce right>
                             <div className="col-md-4 gal-img">
                                 <a href="#gal2"><img src={require("../asssets/images/g2.jpg")} alt="news image" className="img-fluid" /></a>
@@ -45,7 +93,7 @@ class Gallery extends Component {
                             </div>
                             </Bounce>
 
-                        </div>
+                        </div> */}
 
                         {/* <!-- popup--> */}
                         <div id="gal1" className="pop-overlay animate">
@@ -111,4 +159,15 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+
+function mapDispatchToProp(dispatch) {
+    return ({
+        PROJECT_DATA: (user) => {
+            dispatch(PROJECT_DATA(user))
+        },
+    })
+}
+
+
+export default connect(null,mapDispatchToProp)(Gallery);
+// export default Gallery;

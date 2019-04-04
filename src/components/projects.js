@@ -3,8 +3,12 @@ import Footer from './footer';
 import Header from './header';
 import { Link } from 'react-router-dom';
 import { db } from '../config/firebaseConfig';
+import { connect } from 'react-redux';
+import { PROJECT_DATA } from '../redux/actions/root.action';
+import history from '../config/history'
 
 class Projects extends Component {
+
 
     state={
         projects:[]
@@ -40,10 +44,15 @@ componentDidMount(){
                         {this.state.projects.map((item,index)=>{
                                 return(
                                     <div className="col-lg-4 col-md-6">
-                            <Link to='/singleListing'>                            
+                            {/* <Link to='/singleListing'>                             */}
+                            <div onClick={()=>
+                            {this.props.PROJECT_DATA(item)
+                            history.push('/singleListing')
+                            }
+                            }>
                                 <div className="card border-0 med-blog">
                                     <div className="card-header p-0">
-                                        <a href="single.html">
+                                        <a href="#">
                                             <img className="card-img-bottom" src={item.banner_image_url} alt="image" />
                                         </a>
                                     </div>
@@ -61,7 +70,8 @@ componentDidMount(){
                                         
                                     </div>
                                 </div>
-                            </Link>
+                                </div>
+                            {/* </Link> */}
                             </div>
                         )
                         })}
@@ -230,4 +240,14 @@ componentDidMount(){
   }
 }
 
-export default Projects;
+function mapDispatchToProp(dispatch) {
+    return ({
+        PROJECT_DATA: (user) => {
+            dispatch(PROJECT_DATA(user))
+        },
+    })
+}
+
+
+export default connect(null,mapDispatchToProp)(Projects);
+// export default Projects;

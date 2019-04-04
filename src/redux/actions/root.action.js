@@ -4,6 +4,8 @@ export const LOGGEDIN = 'LOGGEDIN';
 export const LOGGED_OUT = 'LOGGED_OUT';
 export const EDIT_OBJ = 'EDIT_OBJ';
 export const CONTACT_EDIT_DATA = 'CONTACT_EDIT_DATA'
+export const SINGLE_PROJECT_DATA='SINGLE_PROJECT_DATA'
+
 
   export function USER_LOGGEDIN(data){
     console.log(data);
@@ -23,3 +25,7 @@ export const CONTACT_EDIT_DATA = 'CONTACT_EDIT_DATA'
     return { type: CONTACT_EDIT_DATA, payload : data }    
   }
   
+  export function PROJECT_DATA(data) {
+    console.log(data)
+  return { type: SINGLE_PROJECT_DATA, payload : data }    
+}
