@@ -49,7 +49,7 @@ componentDidMount(){
                                         {this.props.PROJECT_DATA(item)
                                         history.push('/singleListing')
                                         } }>
-                                        <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
+                                  <a href="#">      <img  src={item.banner_image_url} alt="news image" className="img-fluid" /></a>
                                     </div>
                                     </Bounce>):
                                     (<Bounce right >
@@ -57,7 +57,7 @@ componentDidMount(){
                                             {this.props.PROJECT_DATA(item)
                                             history.push('/singleListing')
                                             } }>
-                                            <img  src={item.banner_image_url} alt="news image" className="img-fluid" />
+                                         <a href='#'><img  src={item.banner_image_url} alt="news image" className="img-fluid" /></a>
                                         </div>
                                         </Bounce>)
                             
